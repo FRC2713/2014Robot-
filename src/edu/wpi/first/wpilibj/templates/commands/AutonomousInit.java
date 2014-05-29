@@ -7,16 +7,13 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
  *
  * @author Ryan Bradford
  */
-public class AutonomousCommand extends CommandGroup {
+public class AutonomousInit extends CommandGroup {
 
-    public AutonomousCommand() {
-        addSequential(new AutonomousInit());
-        addSequential(new UnWind());
-        
-//        addSequential(new GoForward(1),1.0);
-//        addSequential(new LiftArm(1),1.0);
-//        addSequential(new WindUp(),4.2); 
-//        addSequential(new UnWind()); 
+    public AutonomousInit() {
+        addParallel(new GoForward(1),1.0);
+        addParallel(new LiftArm(1),1.0);      
+        addParallel(new WindUp(),4.2); 
+        addParallel(new VTracking());        
         
     }
    // protected void execute() {
