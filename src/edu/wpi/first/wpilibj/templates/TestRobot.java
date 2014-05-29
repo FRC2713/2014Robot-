@@ -56,6 +56,7 @@ public class TestRobot extends IterativeRobot {
         prefs.putDouble("SaturationHigh",300);
         prefs.putDouble("BrightnessLow",200);
         prefs.putDouble("BrightnessHigh", 240);
+        SmartDashboard.putData(Scheduler.getInstance());
         /**
          * Adds variables to the Preferences Table in SmartDashboard,
          */
