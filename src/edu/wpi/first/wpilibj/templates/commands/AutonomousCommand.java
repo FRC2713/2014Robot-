@@ -7,7 +7,7 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
  *
  * @author Ryan Bradford
  */
-public class AutonomousCommand extends CommandGroup {
+public class AutonomousCommand extends CommandGroup {//i hate evrything from nate shu
 
     public AutonomousCommand() {
         addSequential(new AutonomousInit());
